@@ -1,0 +1,102 @@
+<html>
+	<head>
+		<title> Giới thiệu về Tuyên Quang </title> 
+		<link rel="stylesheet" href="GioiThieuVeTuyenQuang/Css.css">
+		<script src="GioiThieuVeTuyenQuang/jquery-3.2.1.min.js"></script>
+		<script language='javascript'>
+			var myVar=setInterval(function(){Clock()},1000);
+			function Clock()
+			{
+				a=new Date();
+				w=Array("Chủ Nhật","Thứ hai","Thứ ba","Thứ tư","Thứ năm","Thứ sáu","Thứ bảy");
+				var a=w[a.getDay()],
+				w=new Date,
+				d=w.getDate();
+				m=w.getMonth()+1;
+				y=w.getFullYear();
+				h=w.getHours();
+				mi=w.getMinutes();
+				se=w.getSeconds();
+				if(10>d){d="0"+d}
+				if(10>m){m="0"+m}
+				if(10>h){h="0"+h}
+				if(10>mi){mi="0"+mi}
+				if(10>se){se="0"+se}
+				document.getElementById("clockDiv").innerHTML="Hôm nay: "+a+", "+d+" / "+m+" / "+y+" - "+h+":"+mi+":"+se+"";
+			}
+		</script>
+	</head>
+	<body>
+		<div class="header">
+		<div class="header-right">
+			<div id="clockDiv"></div>
+		</div>
+		</div>
+		<img src="GioiThieuVeTuyenQuang/Pics/baner.png">
+		<div id="menu">
+			<ul>
+				<li> <a href="index.html" title="Trang Chủ" class="trangchu">  Trang Chủ </a> </li>
+				<li>
+					<a href="GioiThieuVeTuyenQuang/GioiThieu.html"> Giới Thiệu </a>
+					<ul class="menu1">
+						<li> <a href="GioiThieuVeTuyenQuang/dialy.html"> Vị trí địa lý </a> </li>
+						<li> <a href="GioiThieuVeTuyenQuang/vanhoa.html"> Văn Hóa </a> </li>	
+						
+					</ul>
+				</li>
+				<li> <a href="GioiThieuVeTuyenQuang/dulich.html" title="Du Lịch"> Du Lịch </a> 
+					<ul class="menu1">
+						<li> <a href="GioiThieuVeTuyenQuang/dulich.html#doan1"> Các loại hình du lịch </a> </li>
+						<li> <a href="GioiThieuVeTuyenQuang/dulich.html#doan2"> Chương trình du lịch </a> </li>	
+						<li> <a href="GioiThieuVeTuyenQuang/dulich.html#doan3"> Chính sách du lịch </a> </li>				
+					</ul></li>
+				<li> <a href="GioiThieuVeTuyenQuang/lehoi.html" title="Lễ  Hội"> Lễ Hội </a> </li>
+				<li> <a href="GioiThieuVeTuyenQuang/anh.html" title="Ảnh"> Ảnh </a> </li>				
+				<div class="search">				
+					<form action="action.php">
+						<input type="text" placeholder="Tìm kiếm.." name="search" ><button type="submit"><i class="btnsearch">Search</i></button>     					
+					</form>
+				</div>
+			</ul>	
+		</div>
+		<div id="link">
+			<div id="div1">
+				<ul>
+					<a id="aa" href="GioiThieuVeTuyenQuang/GioiThieu.html" title="Giới Thiệu">
+						<h3><center>Giới Thiệu</center></h3>
+						<img id="mp" width="300" height="280" src="GioiThieuVeTuyenQuang/Pics/1.png">				
+					</a>
+				</ul>
+			</div>
+			<div id="div2">
+				<ul>
+					<a id="aa" href="GioiThieuVeTuyenQuang/dulich.html" title="Du Lịch">
+						<h3><center>Du Lịch</center></h3>
+						<img id="mp" width="300" height="280" src="GioiThieuVeTuyenQuang/Pics/doan1.1.jpg">
+					</a>
+				</ul>
+			</div>
+			<div id="div3">
+				<ul>
+					<a id="aa" href="GioiThieuVeTuyenQuang/lehoi.html" title="Lễ Hội">
+						<h3><center>Lễ Hội</center></h3>
+						<img id="mp" width="300" height="280" src="GioiThieuVeTuyenQuang/Pics/lh3.jpg">
+					</a>
+				</ul>
+			</div>
+			<div id="div4">
+				<ul>
+					<a id="aa" href="GioiThieuVeTuyenQuang/anh.html" title="Ảnh">
+						<h3><center>Ảnh</center></h3>
+						<img id="mp" width="300" height="280" src="GioiThieuVeTuyenQuang/Pics/p1.jpg">	
+					</a>
+				</ul>
+			</div>
+		</div>
+		<footer>
+			<p>Author: Bùi Phương Nam, Bùi Đình Phúc<br>
+			<a href="mailto:namcoitq@gmail.com">namcoitq@gmail.com</a> &ensp;
+			<a href="mailto:phuctq2000@gmail.com">phuctq2000@gmail.com</a></p>
+		</footer>
+	</body>
+</html>
